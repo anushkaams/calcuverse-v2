@@ -12,6 +12,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { notFound } from "next/navigation";
 
+export const runtime = 'edge';
+
 function CalcSkeleton() {
   return (
     <div className="animate-pulse space-y-3 p-2">
