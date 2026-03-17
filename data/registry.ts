@@ -692,7 +692,7 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Exact age from date of birth",
     category: "date-time",
     icon: "🎂",
-    component: lazy(() => import("../components/calculators/AgeCalc/page")),
+    component: lazy(() => import("../components/calculators/AgeCalculator")),
     tags: ["birthday", "years"],
   },
   {
