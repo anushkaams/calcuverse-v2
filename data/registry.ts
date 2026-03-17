@@ -79,12 +79,12 @@ export const CALCULATORS: CalculatorMeta[] = [
     tags: ["sleep", "bedtime", "wake up", "cycles"],
   },
   {
-    id: "fuel",
+    id: "fuel-calculator",
     name: "Fuel Cost",
     description: "Estimate trip fuel expenses",
     category: "everyday",
     icon: "⛽",
-    component: lazy(() => import("../components/calculators/FuelCalc/page")),
+    component: lazy(() => import("../components/calculators/FuelCalc")),
     tags: ["gas", "trip", "mpg"],
   },
   {

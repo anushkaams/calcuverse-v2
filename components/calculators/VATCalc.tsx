@@ -21,7 +21,7 @@ export default function VATCalc() {
   const base = mode === "add" ? p : p / (1 + r / 100);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "add" ? "active" : ""}`} onClick={() => setMode("add")}>Add Tax</button>
         <button className={`tab-item ${mode === "remove" ? "active" : ""}`} onClick={() => setMode("remove")}>Remove Tax</button>

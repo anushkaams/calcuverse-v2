@@ -32,7 +32,7 @@ export default function ReadingTimeCalc() {
   ];
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "paste" ? "active" : ""}`} onClick={() => setMode("paste")}>Paste Text</button>
         <button className={`tab-item ${mode === "count" ? "active" : ""}`} onClick={() => setMode("count")}>Word Count</button>

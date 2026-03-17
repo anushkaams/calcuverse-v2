@@ -37,7 +37,7 @@ export default function CreditCardCalc() {
   const minInterest = isFinite(minMonths) ? minMonths * minPayment - b : Infinity;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "payment" ? "active" : ""}`} onClick={() => setMode("payment")}>Fixed Payment</button>
         <button className={`tab-item ${mode === "payoff" ? "active" : ""}`} onClick={() => setMode("payoff")}>Target Date</button>

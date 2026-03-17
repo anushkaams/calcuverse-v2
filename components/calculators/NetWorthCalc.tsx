@@ -37,7 +37,7 @@ export default function NetWorthCalc() {
   };
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="font-semibold mb-3" style={{ color: "#10b981" }}>Assets</div>
         <div className="space-y-2">

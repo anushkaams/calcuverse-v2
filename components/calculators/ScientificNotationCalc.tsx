@@ -34,7 +34,7 @@ export default function ScientificNotationCalc() {
   }
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "toSci" ? "active" : ""}`} onClick={() => setMode("toSci")}>To Scientific</button>
         <button className={`tab-item ${mode === "fromSci" ? "active" : ""}`} onClick={() => setMode("fromSci")}>From Scientific</button>

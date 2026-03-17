@@ -121,7 +121,7 @@ export default function TimeDurationCalc() {
   const res = fromSec(rawResult);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       {/* Mode */}
       <div className="tab-group">
         <button

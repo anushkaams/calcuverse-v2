@@ -29,7 +29,7 @@ export default function FlooringCalc() {
   const cost = parseFloat(pricePerSqm) > 0 ? totalArea * parseFloat(pricePerSqm) : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6 py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${unit === "m" ? "active" : ""}`} onClick={() => setUnit("m")}>Metres</button>
         <button className={`tab-item ${unit === "ft" ? "active" : ""}`} onClick={() => setUnit("ft")}>Feet</button>

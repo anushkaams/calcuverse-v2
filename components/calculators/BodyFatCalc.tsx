@@ -51,7 +51,7 @@ export default function BodyFatCalc() {
   const [cat, color] = bf > 0 ? getCategory(bf, gender) : ["-", "var(--text-muted)"];
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${gender === "male" ? "active" : ""}`} onClick={() => setGender("male")}>Male</button>
         <button className={`tab-item ${gender === "female" ? "active" : ""}`} onClick={() => setGender("female")}>Female</button>

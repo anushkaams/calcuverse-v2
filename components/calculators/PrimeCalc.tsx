@@ -45,7 +45,7 @@ export default function PrimeCalc() {
   const primeList = mode === "list" ? Array.from({ length: limit }, (_, i) => i + 2).filter(isPrime) : [];
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "factorize" ? "active" : ""}`} onClick={() => setMode("factorize")}>Factorize</button>
         <button className={`tab-item ${mode === "check" ? "active" : ""}`} onClick={() => setMode("check")}>Is Prime?</button>

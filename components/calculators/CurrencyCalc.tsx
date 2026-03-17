@@ -24,7 +24,7 @@ export default function CurrencyCalc() {
   const currencies = Object.keys(RATES);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Amount</div>
         <input type="number" className="field-input" value={amount} onChange={e => setAmount(e.target.value)} placeholder="100" />

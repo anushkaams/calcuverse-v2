@@ -29,7 +29,7 @@ export default function MortgageAffordCalc() {
   const maxHome = maxLoan + downPayment;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Annual Gross Income ($)</div>
         <input type="number" className="field-input" value={income} onChange={e => setIncome(e.target.value)} placeholder="80000" />

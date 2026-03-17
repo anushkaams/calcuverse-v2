@@ -21,7 +21,7 @@ export default function ProfitMarginCalc() {
   const markup = c > 0 ? (profit / c) * 100 : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "margin" ? "active" : ""}`} onClick={() => setMode("margin")}>Margin</button>
         <button className={`tab-item ${mode === "markup" ? "active" : ""}`} onClick={() => setMode("markup")}>Markup</button>

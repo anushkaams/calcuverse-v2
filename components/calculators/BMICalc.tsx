@@ -55,7 +55,7 @@ export default function BMICalcPage() {
   const pct = Math.min(100, Math.max(0, ((bmi - 10) / 30) * 100));
 
   return (
-    <div className="space-y-8 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-8   py-6 px-4">
       {/* ── Unit Selector ── */}
       <div className="tab-group">
         <button

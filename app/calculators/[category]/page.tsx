@@ -229,7 +229,7 @@ export default function CalculatorsPage({ params }: { params: Promise<{ category
         </header>
 
         <div className="flex-1 overflow-y-auto flex items-start justify-center p-6">
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-lg">
             <Suspense fallback={<CalcSkeleton />}>
               <ActiveComponent />
             </Suspense>

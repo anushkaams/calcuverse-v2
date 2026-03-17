@@ -45,7 +45,7 @@ export default function HeatIndexCalc() {
   const [risk, riskColor] = temp && humidity ? getRisk(hiC) : ["—", "var(--text-muted)"];
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${unit === "C" ? "active" : ""}`} onClick={() => setUnit("C")}>Celsius</button>
         <button className={`tab-item ${unit === "F" ? "active" : ""}`} onClick={() => setUnit("F")}>Fahrenheit</button>

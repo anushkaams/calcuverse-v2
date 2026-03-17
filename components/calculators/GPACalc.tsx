@@ -42,7 +42,7 @@ export default function GPACalc() {
   const gpaColor = gpa >= 3.7 ? "#10b981" : gpa >= 3.0 ? "#6366f1" : gpa >= 2.0 ? "#f59e0b" : "#ef4444";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="space-y-2">
         {courses.map((c, i) => (
           <div key={i} className="flex gap-2 items-center">

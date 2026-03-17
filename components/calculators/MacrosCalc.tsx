@@ -39,7 +39,7 @@ export default function MacrosCalc() {
   };
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Daily Calorie Target</div>
         <input type="number" className="field-input" value={calories} onChange={e => setCalories(e.target.value)} placeholder="2000" />

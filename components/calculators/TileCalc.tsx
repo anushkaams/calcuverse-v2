@@ -25,7 +25,7 @@ export default function TileCalc() {
   const boxes10 = Math.ceil(tilesNeeded / 10);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="font-medium mb-3 text-sm" style={{ color: "var(--text-primary)" }}>Room Dimensions (m)</div>
         <div className="grid grid-cols-2 gap-3">

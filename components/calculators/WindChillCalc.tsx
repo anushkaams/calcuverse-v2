@@ -35,7 +35,7 @@ export default function WindChillCalc() {
   const riskColor = wcDisplay < -27 ? "#ef4444" : wcDisplay < -15 ? "#f59e0b" : "var(--text-secondary)";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${unit === "C" ? "active" : ""}`} onClick={() => setUnit("C")}>°C / km/h</button>
         <button className={`tab-item ${unit === "F" ? "active" : ""}`} onClick={() => setUnit("F")}>°F / mph</button>

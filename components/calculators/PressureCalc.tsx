@@ -31,7 +31,7 @@ export default function PressureCalc() {
   const unitKeys = Object.keys(UNITS);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Value</div>
         <input type="number" className="field-input" value={value} onChange={e => setValue(e.target.value)} placeholder="1" />

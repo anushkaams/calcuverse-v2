@@ -29,7 +29,7 @@ export default function UnitPriceCalc() {
   const minPrice = Math.min(...withUnit.map(p => p.unitPrice));
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="space-y-3">
         {products.map((p, i) => (
           <div key={i} className="p-3 rounded-xl border" style={{ borderColor: "var(--border)" }}>

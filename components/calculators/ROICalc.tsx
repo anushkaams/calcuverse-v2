@@ -24,7 +24,7 @@ export default function ROICalc() {
   const positive = gain >= 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Initial Investment ($)</div>
         <input type="number" className="field-input" value={initial} onChange={e => setInitial(e.target.value)} placeholder="10000" />

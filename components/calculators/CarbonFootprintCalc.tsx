@@ -31,7 +31,7 @@ export default function CarbonFootprintCalc() {
   const color = total < 2 ? "#10b981" : total < 5 ? "#f59e0b" : "#ef4444";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Car Driving (km per year)</div>
         <input type="number" className="field-input" value={carMiles} onChange={e => setCarMiles(e.target.value)} placeholder="12000" />

@@ -31,7 +31,7 @@ export default function OvulationCalc() {
   const fmt = (d: Date) => d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">First Day of Last Period</div>
         <input type="date" className="field-input" value={lmpDate} onChange={e => setLmpDate(e.target.value)} />

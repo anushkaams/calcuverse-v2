@@ -34,7 +34,7 @@ export default function SavingsGoalCalc() {
   const pct = g > 0 ? Math.min(100, (c / g) * 100) : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Savings Goal ($)</div>
         <input type="number" className="field-input" value={goal} onChange={e => setGoal(e.target.value)} placeholder="20000" />

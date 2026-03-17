@@ -41,7 +41,7 @@ export default function ConcreteCalc() {
   const weightKg = volumeM3 * 2400; // approx density
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${shape === "slab" ? "active" : ""}`} onClick={() => setShape("slab")}>Slab</button>
         <button className={`tab-item ${shape === "cylinder" ? "active" : ""}`} onClick={() => setShape("cylinder")}>Cylinder</button>

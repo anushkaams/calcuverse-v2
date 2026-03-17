@@ -26,7 +26,7 @@ export default function CircumferenceCalc() {
   const diameter = 2 * r;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">I know the...</div>
         <div className="tab-group">

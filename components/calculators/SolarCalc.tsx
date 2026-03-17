@@ -34,7 +34,7 @@ export default function SolarCalc() {
   const savings25yr = annualSavings * 25;
 
   return (
-    <div className="space-y-5 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-5   py-6 px-4">
       <div className="grid grid-cols-2 gap-3">
         <div><div className="field-label">Number of Panels</div><input type="number" className="field-input" value={panels} onChange={e => setPanels(e.target.value)} /></div>
         <div><div className="field-label">Panel Wattage (W)</div><input type="number" className="field-input" value={wattage} onChange={e => setWattage(e.target.value)} /></div>

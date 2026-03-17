@@ -30,7 +30,7 @@ export default function FreelanceRateCalc() {
   const weekRate = hourlyRate * (parseFloat(hoursPerWeek) || 40) * ((parseFloat(billablePct) || 70) / 100);
 
   return (
-    <div className="space-y-5 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-5   py-6 px-4">
       <div>
         <div className="field-label">Desired Annual Take-Home ($)</div>
         <input type="number" className="field-input" value={targetIncome} onChange={e => setTargetIncome(e.target.value)} placeholder="80000" />

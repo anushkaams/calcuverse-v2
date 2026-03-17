@@ -46,7 +46,7 @@ export default function RunningPaceCalc() {
   const speedKmh = paceSecPerUnit > 0 ? 3600 / (paceSecPerUnit * (unit === "km" ? 1 : KM_PER_MI)) : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "pace" ? "active" : ""}`} onClick={() => setMode("pace")}>Find Pace</button>
         <button className={`tab-item ${mode === "finish" ? "active" : ""}`} onClick={() => setMode("finish")}>Find Finish Time</button>

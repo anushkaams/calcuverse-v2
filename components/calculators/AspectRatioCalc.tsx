@@ -43,7 +43,7 @@ export default function AspectRatioCalc() {
   };
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "find" ? "active" : ""}`} onClick={() => setMode("find")}>Find Ratio</button>
         <button className={`tab-item ${mode === "resize" ? "active" : ""}`} onClick={() => setMode("resize")}>Resize</button>

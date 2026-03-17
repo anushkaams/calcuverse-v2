@@ -40,7 +40,7 @@ export default function PregnancyCalc() {
   const daysLeft = dueDate ? Math.ceil((dueDate.getTime() - new Date().getTime()) / 86400000) : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${method === "lmp" ? "active" : ""}`} onClick={() => setMethod("lmp")}>LMP</button>
         <button className={`tab-item ${method === "conception" ? "active" : ""}`} onClick={() => setMethod("conception")}>Conception</button>

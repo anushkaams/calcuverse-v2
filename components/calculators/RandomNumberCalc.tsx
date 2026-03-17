@@ -42,7 +42,7 @@ export default function RandomNumberCalc() {
   ];
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="flex flex-wrap gap-2">
         {QUICK_RANGES.map(r => (
           <button key={r.label} onClick={() => { setMin(r.min); setMax(r.max); }}

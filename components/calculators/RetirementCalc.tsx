@@ -32,7 +32,7 @@ export default function RetirementCalc() {
   const onTrack = futureValue >= needed;
 
   return (
-    <div className="space-y-5 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-5   py-6 px-4">
       <div className="grid grid-cols-2 gap-3">
         <div>
           <div className="field-label">Current Age</div>

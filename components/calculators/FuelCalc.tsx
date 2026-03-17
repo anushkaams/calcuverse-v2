@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import CalculatorInfo from "@/components/CalculatorInfo";
 
 export default function FuelCalc() {
     const [distance, setDistance] = useState("300");
@@ -23,6 +24,39 @@ export default function FuelCalc() {
     const distLabel = unit === "imperial" ? "miles" : "km";
     const fuelLabel = unit === "imperial" ? "gallons" : "litres";
     const priceLabel = unit === "imperial" ? "$/gallon" : "$/litre";
+
+    const faqs = [
+        {
+            question: "How does the fuel cost calculator work?",
+            answer:
+                "The calculator works by taking three inputs: the total distance of your trip, your vehicle's fuel efficiency (how far it travels per litre or gallon), and the current price of fuel at the pump. It divides the distance by the fuel efficiency to find out how many litres or gallons your trip will consume, then multiplies that by the fuel price to give you the total cost. The result is a quick and reliable estimate that helps you budget for any journey, whether it's a daily commute or a long road trip.",
+        },
+        {
+            question: "What fuel efficiency figure should I use?",
+            answer:
+                "The best figure to use is your real-world fuel efficiency rather than the manufacturer's official rating. Manufacturer figures are measured under controlled laboratory conditions and are almost always better than what you will achieve on the road. You can find your real-world efficiency by filling your tank completely, driving normally until you need to refuel, then dividing the kilometres or miles travelled by the litres or gallons used. Most modern vehicles also display a live or average fuel consumption figure on the dashboard, which is a convenient source for this number.",
+        },
+        {
+            question: "Why does my actual fuel cost differ from the estimate?",
+            answer:
+                "Several real-world factors can cause your actual cost to differ from the estimate. Driving style has the biggest impact — frequent hard acceleration and braking significantly increases fuel consumption. Other factors include road type (highway driving is generally more efficient than stop-start city driving), vehicle load (carrying heavy cargo or passengers increases consumption), tyre pressure (under-inflated tyres create more rolling resistance), air conditioning use, and weather conditions such as strong headwinds. The calculator provides a solid baseline estimate, but treating it as a close approximation rather than an exact figure is always wise.",
+        },
+        {
+            question: "Can I use this calculator for both petrol and diesel vehicles?",
+            answer:
+                "Yes, the calculator works for any fuel type including petrol, diesel, LPG, and even hydrogen vehicles, as long as you enter the correct fuel price and efficiency for that fuel type. Keep in mind that diesel and petrol are priced differently at the pump, and diesel engines typically achieve better fuel efficiency than equivalent petrol engines. Simply enter the price per litre of whatever fuel your vehicle uses and your vehicle's efficiency with that fuel, and the calculator will give you an accurate cost estimate.",
+        },
+        {
+            question: "How do I calculate fuel cost for a return trip?",
+            answer:
+                "To calculate the cost of a return trip, simply double the one-way distance before entering it into the calculator. For example, if your destination is 150 km away, enter 300 km to get the total round trip fuel cost. If your return route is different in distance, calculate each leg separately and add them together. Keep in mind that return trips sometimes differ in fuel consumption due to different road conditions, elevation changes, or varying traffic levels between the outbound and return journeys.",
+        },
+        {
+            question: "Is this calculator useful for comparing different vehicles?",
+            answer:
+                "Absolutely. One of the most practical uses of this calculator is comparing the running costs of different vehicles before making a purchase decision. By entering the same trip distance and fuel price but swapping out the fuel efficiency figure for each vehicle you are considering, you can see exactly how much more or less each option will cost you per trip and over time. This makes it easy to weigh up whether a more fuel-efficient vehicle justifies a higher purchase price based on your typical driving distance and fuel costs in your area.",
+        },
+    ];
 
     return (
         <div className="space-y-4">
@@ -92,6 +126,11 @@ export default function FuelCalc() {
                     ))}
                 </div>
             </div>
+
+            <CalculatorInfo
+                title="Fuel Calculator - Guide & FAQ"
+                faqs={faqs}
+            />
         </div>
     );
 }

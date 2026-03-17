@@ -45,7 +45,7 @@ export default function SubnetCalc() {
   }
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="grid grid-cols-3 gap-3">
         <div className="col-span-2">
           <div className="field-label">IP Address</div>

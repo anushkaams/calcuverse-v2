@@ -28,7 +28,7 @@ export default function VoltageDividerCalc() {
   const fmt = (r: number) => r >= 1_000_000 ? `${(r / 1_000_000).toFixed(3)}MΩ` : r >= 1000 ? `${(r / 1000).toFixed(3)}kΩ` : `${r.toFixed(1)}Ω`;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "find_vout" ? "active" : ""}`} onClick={() => setMode("find_vout")}>Find Vout</button>
         <button className={`tab-item ${mode === "find_r2" ? "active" : ""}`} onClick={() => setMode("find_r2")}>Find R2</button>

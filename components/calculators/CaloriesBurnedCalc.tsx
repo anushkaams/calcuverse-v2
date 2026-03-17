@@ -38,7 +38,7 @@ export default function CaloriesBurnedCalc() {
   const calories = met * weightKg * ((parseFloat(minutes) || 0) / 60);
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${unit === "kg" ? "active" : ""}`} onClick={() => setUnit("kg")}>kg</button>
         <button className={`tab-item ${unit === "lb" ? "active" : ""}`} onClick={() => setUnit("lb")}>lbs</button>

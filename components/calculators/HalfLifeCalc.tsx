@@ -36,7 +36,7 @@ export default function HalfLifeCalc() {
   const pctRemaining = n0 > 0 ? (remaining / n0) * 100 : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="flex flex-wrap gap-2">
         {PRESETS.map(p => (
           <button key={p.label} onClick={() => setHalfLife(String(p.hl))}

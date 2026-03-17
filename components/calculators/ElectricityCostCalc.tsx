@@ -37,7 +37,7 @@ export default function ElectricityCostCalc() {
   const yearlyCost = dailyCost * 365;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Appliance Wattage (W)</div>
         <input type="number" className="field-input" value={watts} onChange={e => setWatts(e.target.value)} placeholder="100" />

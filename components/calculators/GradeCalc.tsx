@@ -49,7 +49,7 @@ export default function GradeCalc() {
   const gradeColor = grade >= 90 ? "#10b981" : grade >= 80 ? "#6366f1" : grade >= 70 ? "#f59e0b" : "#ef4444";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "simple" ? "active" : ""}`} onClick={() => setMode("simple")}>Points</button>
         <button className={`tab-item ${mode === "weighted" ? "active" : ""}`} onClick={() => setMode("weighted")}>Weighted</button>

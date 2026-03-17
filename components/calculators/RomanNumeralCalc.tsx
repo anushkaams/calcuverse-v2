@@ -42,7 +42,7 @@ export default function RomanNumeralCalc() {
     : String(fromRoman(input) || (input ? "Invalid" : ""));
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "toRoman" ? "active" : ""}`} onClick={() => { setMode("toRoman"); setInput(""); }}>Number → Roman</button>
         <button className={`tab-item ${mode === "fromRoman" ? "active" : ""}`} onClick={() => { setMode("fromRoman"); setInput(""); }}>Roman → Number</button>

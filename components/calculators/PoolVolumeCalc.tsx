@@ -45,7 +45,7 @@ export default function PoolVolumeCalc() {
   const gallons = litres * 0.264172;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${shape === "rect" ? "active" : ""}`} onClick={() => setShape("rect")}>Rectangle</button>
         <button className={`tab-item ${shape === "oval" ? "active" : ""}`} onClick={() => setShape("oval")}>Oval</button>

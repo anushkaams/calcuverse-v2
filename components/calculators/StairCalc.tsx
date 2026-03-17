@@ -29,7 +29,7 @@ export default function StairCalc() {
   const isComfortable = unit === "cm" ? twoRT >= 61 && twoRT <= 63.5 : twoRT >= 24 && twoRT <= 25;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${unit === "cm" ? "active" : ""}`} onClick={() => setUnit("cm")}>cm</button>
         <button className={`tab-item ${unit === "in" ? "active" : ""}`} onClick={() => setUnit("in")}>inches</button>

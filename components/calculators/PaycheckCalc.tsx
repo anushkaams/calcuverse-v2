@@ -32,7 +32,7 @@ export default function PaycheckCalc() {
   const netBiweekly = netAnnual / 26;
 
   return (
-    <div className="space-y-5 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-5   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${period === "annual" ? "active" : ""}`} onClick={() => setPeriod("annual")}>Salary</button>
         <button className={`tab-item ${period === "hourly" ? "active" : ""}`} onClick={() => setPeriod("hourly")}>Hourly</button>

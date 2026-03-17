@@ -27,7 +27,7 @@ export default function InflationCalc() {
   const pctChange = a > 0 ? (change / a) * 100 : 0;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${mode === "future" ? "active" : ""}`} onClick={() => setMode("future")}>Future Value</button>
         <button className={`tab-item ${mode === "past" ? "active" : ""}`} onClick={() => setMode("past")}>Past Value</button>

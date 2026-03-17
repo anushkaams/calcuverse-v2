@@ -3,7 +3,7 @@ import { useState } from "react";
 import CalculatorInfo from "@/components/CalculatorInfo";
 
 export default function AgeCalculator() {
-  const [dob, setDob] = useState("1990-01-01");
+  const [dob, setDob] = useState("1990-12-29");
   const today = new Date();
   const birth = new Date(dob);
   let years = 0, months = 0, days = 0, totalDays = 0, nextBirthday = "";
@@ -100,7 +100,7 @@ export default function AgeCalculator() {
         )}
 
         <CalculatorInfo
-            title="Age Calculator – Guide & FAQ"
+            title="Age Calculator - Guide & FAQ"
             faqs={faqs}
         />
       </div>

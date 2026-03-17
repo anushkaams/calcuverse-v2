@@ -50,7 +50,7 @@ export default function LEDResistorCalc() {
   const rColor = R <= 0 ? "#ef4444" : "#10b981";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div>
         <div className="field-label">Supply Voltage (V)</div>
         <div className="flex gap-2 flex-wrap mb-2">

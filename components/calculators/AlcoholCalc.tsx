@@ -39,7 +39,7 @@ export default function AlcoholCalc() {
   const bacColor = currentBac === 0 ? "#10b981" : currentBac < 0.05 ? "#10b981" : currentBac < 0.08 ? "#f59e0b" : "#ef4444";
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="tab-group">
         <button className={`tab-item ${gender === "male" ? "active" : ""}`} onClick={() => setGender("male")}>Male</button>
         <button className={`tab-item ${gender === "female" ? "active" : ""}`} onClick={() => setGender("female")}>Female</button>

@@ -31,7 +31,7 @@ export default function PaintCalc() {
   const gallonsNeeded = litresNeeded / 3.785;
 
   return (
-    <div className="space-y-6 max-w-md mx-auto py-6 px-4">
+    <div className="space-y-6   py-6 px-4">
       <div className="space-y-4">
         {rooms.map((r, i) => (
           <div key={i} className="p-4 rounded-xl border space-y-3" style={{ borderColor: "var(--border)" }}>
