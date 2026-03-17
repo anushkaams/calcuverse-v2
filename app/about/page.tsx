@@ -148,7 +148,7 @@ export default function AboutPage() {
                                 The Solution
                             </h3>
                             <p style={{color: "var(--text-secondary)", lineHeight: "1.8"}}>
-                                We decided to build Calcosmos-a modern calculator suite that combines mathematical precision with beautiful design. Everything runs in your browser. No servers. No tracking. No ads. Just pure calculation power at your fingertips.
+                                We decided to build Calcosmos-a modern calculator suite that combines mathematical precision with beautiful design. Everything runs in your browser. No data retention. Just pure calculation power at your fingertips.
                             </p>
                         </div>
 

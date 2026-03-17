@@ -460,7 +460,7 @@ export default function LandingPage() {
                         </div>
                         <h2 className="text-4xl font-bold mb-4" style={{fontFamily: "var(--font-outfit)"}}>Built for real people</h2>
                         <p className="text-lg max-w-xl mx-auto" style={{color: "var(--text-secondary)"}}>
-                            No bloat, no ads, no sign-up. Just fast, accurate calculators with a UI you'll actually enjoy.
+                            No bloat, no sign-up. Just fast, accurate calculators with a UI you'll actually enjoy.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
