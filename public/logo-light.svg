@@ -42,7 +42,7 @@
     filter="url(#glow)"
   >∑</text>
 
-  <!-- Wordmark on light background -->
+  <!-- Wordmark: "Calco" in light weight + "smos" accent -->
   <text
     x="84" y="43"
     font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif"
@@ -50,16 +50,16 @@
     font-weight="300"
     letter-spacing="-0.5"
     fill="#1a1a2e"
-  >Calc</text>
+  >Calco</text>
 
   <text
-    x="148" y="43"
+    x="151" y="43"
     font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif"
     font-size="28"
     font-weight="600"
     letter-spacing="-0.5"
     fill="url(#dot-grad)"
-  >uverse</text>
+  >smos</text>
 
   <!-- Tagline -->
   <text
@@ -69,5 +69,5 @@
     font-weight="400"
     letter-spacing="2.5"
     fill="#9898b0"
-  >ALL CALCULATORS</text>
+  >COSMIC MATH</text>
 </svg>

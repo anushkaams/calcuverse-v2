@@ -162,10 +162,12 @@ export default function CalculatorsPage({ params }: { params: Promise<{ category
 
         <Link href="/" className="flex items-center gap-3 px-5 py-4 border-b"
               style={{ borderColor: "var(--border)" }}>
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center text-base"
-               style={{ background: "var(--accent)", boxShadow: "0 0 12px var(--accent-glow)" }}>∑</div>
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+               style={{ background: "var(--accent)", boxShadow: "0 0 12px var(--accent-glow)" }}>
+            <img src="/logo-icon.svg" width={32} height={32} alt="Calcosmos" className="w-full h-full object-cover rounded"/>
+          </div>
           <div>
-            <div className="font-bold text-base leading-none" style={{ fontFamily: "var(--font-outfit)" }}>Calcuverse</div>
+            <div className="font-bold text-base leading-none" style={{ fontFamily: "var(--font-outfit)" }}>Calcosmos</div>
             <div className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>{CALCULATORS.length} calculators</div>
           </div>
           <button className="ml-auto lg:hidden p-1 rounded text-[var(--text-muted)] hover:text-[var(--text-primary)]"

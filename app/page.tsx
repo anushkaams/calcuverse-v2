@@ -124,12 +124,14 @@ export default function LandingPage() {
                  }}>
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <div className="flex items-center">
-                        <img src="/logo.svg" className="logo-dark" width={200} height={50} alt="Calcuverse"/>
-                        <img src="/logo-light.svg" className="logo-light" width={200} height={50} alt="Calcuverse"/>
+                        <img src="/logo.svg" className="logo-dark" width={200} height={50} alt="Calcosmos"/>
+                        <img src="/logo-light.svg" className="logo-light" width={200} height={50} alt="Calcosmos"/>
                     </div>
                     <div className="hidden md:flex items-center gap-8 text-sm" style={{color: "var(--text-secondary)"}}>
                         <a href="#calculators" className="hover:text-white transition-colors">Calculators</a>
                         <a href="#features" className="hover:text-white transition-colors">Features</a>
+                        <Link href="/about" className="hover:text-white transition-colors">About</Link>
+                        <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
                     </div>
                     <div className="flex items-center gap-3">
                         <Link href="/calculators/all"
@@ -454,7 +456,7 @@ export default function LandingPage() {
                     <div className="text-center mb-12">
                         <div className="inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-4"
                              style={{background: "var(--accent-soft)", color: "#a89bfb", border: "1px solid rgba(124,106,247,.3)"}}>
-                            Why Calcuverse
+                            Why Calcosmos
                         </div>
                         <h2 className="text-4xl font-bold mb-4" style={{fontFamily: "var(--font-outfit)"}}>Built for real people</h2>
                         <p className="text-lg max-w-xl mx-auto" style={{color: "var(--text-secondary)"}}>
@@ -489,8 +491,9 @@ export default function LandingPage() {
                 <div className="max-w-2xl mx-auto text-center">
                     <div className="relative inline-block mb-8">
                         <div className="absolute inset-0 rounded-full blur-3xl" style={{background: "var(--accent)", opacity: 0.15}}/>
-                        <div className="relative w-20 h-20 rounded-2xl mx-auto flex items-center justify-center text-3xl"
-                             style={{background: "var(--accent)", boxShadow: "0 0 40px var(--accent-glow)"}}>∑</div>
+                        <div className="relative w-20 h-20 rounded-2xl mx-auto flex items-center justify-center">
+                            <img src="/logo-icon.svg" width={64} height={64} alt="Calcosmos" className="rounded-lg"/>
+                        </div>
                     </div>
                     <h2 className="text-4xl font-bold mb-4" style={{fontFamily: "var(--font-outfit)"}}>Ready to calculate?</h2>
                     <p className="text-lg mb-10" style={{color: "var(--text-secondary)"}}>
@@ -499,7 +502,7 @@ export default function LandingPage() {
                     <Link href="/calculators/all"
                           className="inline-flex items-center gap-3 px-10 py-4 rounded-xl font-semibold text-white text-lg transition-all duration-200 hover:scale-105 hover:-translate-y-1"
                           style={{background: "var(--accent)", boxShadow: "0 8px 40px var(--accent-glow)"}}>
-                        Open Calcuverse
+                        Open Calcosmos
                         <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -508,19 +511,81 @@ export default function LandingPage() {
             </section>
 
             {/* FOOTER */}
-            <footer className="py-8 px-6 border-t" style={{borderColor: "var(--border)"}}>
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div className="flex items-center gap-3">
-                        <div className="w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold text-white"
-                             style={{background: "var(--accent)"}}>∑</div>
-                        <span className="font-semibold" style={{fontFamily: "var(--font-outfit)"}}>Calcuverse</span>
+            <footer className="py-12 px-6 border-t" style={{borderColor: "var(--border)"}}>
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                        {/* Brand */}
+                        <div>
+                            <div className="flex items-center gap-2 mb-4">
+                                <img src="/logo-icon.svg" width={24} height={24} alt="Calcosmos" className="flex-shrink-0"/>
+                                <span className="font-semibold" style={{fontFamily: "var(--font-outfit)"}}>Calcosmos</span>
+                            </div>
+                            <p className="text-sm" style={{color: "var(--text-muted)"}}>
+                                The calculator suite you'll actually want to use.
+                            </p>
+                        </div>
+
+                        {/* Product */}
+                        <div>
+                            <h4 className="font-semibold mb-4 text-sm" style={{color: "var(--text-secondary)"}}>Product</h4>
+                            <div className="space-y-2">
+                                <Link href="/calculators/all" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    All Calculators
+                                </Link>
+                                <a href="#features" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    Features
+                                </a>
+                                <Link href="/about" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    About Us
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Company */}
+                        <div>
+                            <h4 className="font-semibold mb-4 text-sm" style={{color: "var(--text-secondary)"}}>Company</h4>
+                            <div className="space-y-2">
+                                <Link href="/contact" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    Contact Us
+                                </Link>
+                                <Link href="/privacy" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    Privacy Policy
+                                </Link>
+                                <a href="#" className="block text-sm transition-colors hover:text-white" style={{color: "var(--text-muted)"}}>
+                                    Terms of Service
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Stats */}
+                        <div>
+                            <h4 className="font-semibold mb-4 text-sm" style={{color: "var(--text-secondary)"}}>Stats</h4>
+                            <div className="space-y-2">
+                                <div className="text-sm" style={{color: "var(--text-muted)"}}>
+                                    <span className="font-semibold" style={{color: "var(--accent)"}}>{CALCULATORS.length}+</span> Calculators
+                                </div>
+                                <div className="text-sm" style={{color: "var(--text-muted)"}}>
+                                    <span className="font-semibold" style={{color: "var(--accent)"}}>100%</span> Free
+                                </div>
+                                <div className="text-sm" style={{color: "var(--text-muted)"}}>
+                                    <span className="font-semibold" style={{color: "var(--accent)"}}>0</span> Ads
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p className="text-sm" style={{color: "var(--text-muted)"}}>
-                        {CALCULATORS.length} calculators · Built with Next.js & Tailwind CSS
-                    </p>
-                    <Link href="/calculators/all" className="text-sm hover:text-white transition-colors" style={{color: "var(--text-muted)"}}>
-                        Open App →
-                    </Link>
+
+                    {/* Divider */}
+                    <div className="h-px mb-6" style={{background: "var(--border)"}}/>
+
+                    {/* Bottom */}
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                        <p className="text-sm" style={{color: "var(--text-muted)"}}>
+                            © 2025 Calcosmos. All rights reserved.
+                        </p>
+                        <div className="flex items-center gap-4 text-sm" style={{color: "var(--text-muted)"}}>
+                            <a href="#" className="hover:text-white transition-colors">Twitter</a>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
