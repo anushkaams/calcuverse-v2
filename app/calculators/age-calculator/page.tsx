@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import AgeCalculator from "@/components/calculators/AgeCalculator";
+import CalculatorsLayout from "@/components/CalculatorsLayout";
 
 export const metadata: Metadata = {
-  title: "Age Calculator - Calculate Your Exact Age",
-  description: "Free online age calculator. Find your exact age in years, months, days, weeks, and when your next birthday is.",
-  keywords: ["age calculator", "calculate age", "birthday calculator", "how old am I"],
+  title: "Age Calculator - Free Online Calculator",
+  description: "Free online age calculator. Calculate your exact age.",
+  keywords: ["age calculator", "free age calculator", "online age calculator"],
   openGraph: {
-    title: "Age Calculator - Calculate Your Exact Age",
-    description: "Find your exact age in years, months, days and weeks instantly.",
+    title: "Age Calculator - Free Online Calculator",
+    description: "Calculate your exact age.",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "Age Calculator",
-    description: "Calculate your exact age instantly.",
+    description: "Calculate your exact age.",
   },
 };
 
-export default function Page() {
-  return <AgeCalculator />;
+export default function AgeCalculatorPage() {
+  return <CalculatorsLayout activeId="age" initialCategory="date-time" />;
 }
