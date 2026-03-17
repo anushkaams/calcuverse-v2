@@ -23,12 +23,12 @@ const ZONES = [
 function getTime(zone: string, date: Date) {
   try {
     return date.toLocaleTimeString("en-US", { timeZone: zone, hour: "2-digit", minute: "2-digit", hour12: true });
-  } catch { return "—"; }
+  } catch { return "-"; }
 }
 function getDate(zone: string, date: Date) {
   try {
     return date.toLocaleDateString("en-US", { timeZone: zone, weekday: "short", month: "short", day: "numeric" });
-  } catch { return "—"; }
+  } catch { return "-"; }
 }
 
 export default function TimeZoneCalc() {

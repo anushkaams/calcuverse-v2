@@ -4,7 +4,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 
 const FAQS = [
   { question: "What is dew point?", answer: "Dew point is the temperature at which air becomes saturated with moisture and water begins to condense. Higher dew points feel more humid and muggy." },
-  { question: "How does dew point differ from humidity?", answer: "Relative humidity is a percentage relative to the air's current temperature. Dew point is an absolute temperature — it's a more reliable comfort indicator." },
+  { question: "How does dew point differ from humidity?", answer: "Relative humidity is a percentage relative to the air's current temperature. Dew point is an absolute temperature - it's a more reliable comfort indicator." },
   { question: "What dew point feels uncomfortable?", answer: "Below 10°C (50°F) is dry and comfortable. 13–16°C is mild. 18–21°C starts feeling humid. Above 24°C (75°F) is oppressive and uncomfortable." },
   { question: "When does condensation form?", answer: "Condensation forms on surfaces that are at or below the dew point temperature. This is why cold glass 'sweats' in humid air." },
 ];
@@ -33,7 +33,7 @@ export default function DewPointCalc() {
     return ["Oppressive", "#ef4444"];
   };
 
-  const [comfort, comfortColor] = temp && humidity ? getComfort(dpC) : ["—", "var(--text-muted)"];
+  const [comfort, comfortColor] = temp && humidity ? getComfort(dpC) : ["-", "var(--text-muted)"];
 
   return (
     <div className="space-y-6 max-w-md mx-auto py-6 px-4">

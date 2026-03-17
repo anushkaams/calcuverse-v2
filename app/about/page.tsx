@@ -86,7 +86,7 @@ export default function AboutPage() {
                             <div className="text-4xl mb-6" style={{fontFamily: "var(--font-outfit)"}}>🎯</div>
                             <h2 className="text-3xl font-bold mb-4" style={{fontFamily: "var(--font-outfit)"}}>Our Mission</h2>
                             <p style={{color: "var(--text-secondary)", lineHeight: "1.8"}}>
-                                To provide fast, accurate, and beautifully designed calculators that anyone can use instantly—without ads, without complexity, and without compromise. We're building the last calculator app you'll ever need.
+                                To provide fast, accurate, and beautifully designed calculators that anyone can use instantly-without ads, without complexity, and without compromise. We're building the last calculator app you'll ever need.
                             </p>
                         </div>
 
@@ -95,7 +95,7 @@ export default function AboutPage() {
                             <div className="text-4xl mb-6">✨</div>
                             <h2 className="text-3xl font-bold mb-4" style={{fontFamily: "var(--font-outfit)"}}>Our Vision</h2>
                             <p style={{color: "var(--text-secondary)", lineHeight: "1.8"}}>
-                                A world where calculation tools are indispensable yet invisible—so perfectly designed that they feel like an extension of your thinking, available instantly wherever you need them.
+                                A world where calculation tools are indispensable yet invisible-so perfectly designed that they feel like an extension of your thinking, available instantly wherever you need them.
                             </p>
                         </div>
                     </div>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                                 The Solution
                             </h3>
                             <p style={{color: "var(--text-secondary)", lineHeight: "1.8"}}>
-                                We decided to build Calcosmos—a modern calculator suite that combines mathematical precision with beautiful design. Everything runs in your browser. No servers. No tracking. No ads. Just pure calculation power at your fingertips.
+                                We decided to build Calcosmos-a modern calculator suite that combines mathematical precision with beautiful design. Everything runs in your browser. No servers. No tracking. No ads. Just pure calculation power at your fingertips.
                             </p>
                         </div>
 
@@ -169,10 +169,9 @@ export default function AboutPage() {
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-4xl font-bold mb-12 text-center" style={{fontFamily: "var(--font-outfit)"}}>By The Numbers</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
                             {label: "100+", desc: "Calculators Built"},
-                            {label: "0", desc: "Ads"},
                             {label: "∞", desc: "Free Forever"},
                             {label: "100%", desc: "Browser-Based"},
                         ].map((stat, i) => (

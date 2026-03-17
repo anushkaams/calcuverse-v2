@@ -211,7 +211,7 @@ export default function PrivacyPage() {
                             <ul className="list-disc list-inside space-y-2 ml-2">
                                 <li><strong>Right to access:</strong> Since we don't store your data, there's nothing to access.</li>
                                 <li><strong>Right to deletion:</strong> No data to delete.</li>
-                                <li><strong>Right to portability:</strong> Your data is yours—it never leaves your device.</li>
+                                <li><strong>Right to portability:</strong> Your data is yours-it never leaves your device.</li>
                                 <li><strong>Right to opt-out:</strong> We don't track, so there's nothing to opt out of.</li>
                             </ul>
                         </div>

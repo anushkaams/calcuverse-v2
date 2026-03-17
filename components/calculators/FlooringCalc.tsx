@@ -4,7 +4,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 
 const FAQS = [
   { question: "How much extra flooring should I buy?", answer: "Add 10% for straight-lay patterns and 15% for diagonal. Extra accounts for cutting waste, mistakes, and future repairs." },
-  { question: "What unit is flooring sold in?", answer: "Flooring is typically sold in square metres (m²), square feet (ft²), or by box — each covering a stated area. Always check box coverage before buying." },
+  { question: "What unit is flooring sold in?", answer: "Flooring is typically sold in square metres (m²), square feet (ft²), or by box - each covering a stated area. Always check box coverage before buying." },
   { question: "How do I measure an L-shaped room?", answer: "Split the L shape into two rectangles, calculate each area separately, and add them together." },
   { question: "Do I need underlayment?", answer: "Most laminate and floating floors require underlayment for sound insulation and moisture protection. Glue-down and nail-down installations usually don't." },
 ];

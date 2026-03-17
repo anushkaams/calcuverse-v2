@@ -5,7 +5,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 const FAQS = [
   { question: "What is wind chill?", answer: "Wind chill is how cold air feels on exposed skin due to wind. Wind accelerates heat loss from your body, making it feel colder than the actual temperature." },
   { question: "What formula is used?", answer: "The NWS Wind Chill formula (2001): WC = 35.74 + 0.6215T – 35.75(V^0.16) + 0.4275T(V^0.16), where T is °F and V is wind speed in mph." },
-  { question: "When does wind chill matter?", answer: "Wind chill effects are significant below 10°C (50°F). At 0°C with 30km/h wind, it can feel like -8°C — a dangerous difference for exposed skin." },
+  { question: "When does wind chill matter?", answer: "Wind chill effects are significant below 10°C (50°F). At 0°C with 30km/h wind, it can feel like -8°C - a dangerous difference for exposed skin." },
   { question: "At what wind chill is frostbite a risk?", answer: "Frostbite on exposed skin can occur in under 30 minutes when wind chill falls below -27°C (-17°F), and in under 5 minutes below -48°C (-54°F)." },
 ];
 

@@ -79,7 +79,7 @@ export default function AspectRatioCalc() {
                 <div className="flex items-center gap-2">
                   <input type="number" className="field-input flex-1" value={newWidth} onChange={e => setNewWidth(e.target.value)} placeholder="1280" />
                   <span style={{ color: "var(--text-muted)" }}>→</span>
-                  <div className="flex-1 field-input font-bold" style={{ color: "#6366f1" }}>{newWidth ? calcNewHeight() : "—"} px</div>
+                  <div className="flex-1 field-input font-bold" style={{ color: "#6366f1" }}>{newWidth ? calcNewHeight() : "-"} px</div>
                 </div>
               </div>
               <div>
@@ -87,7 +87,7 @@ export default function AspectRatioCalc() {
                 <div className="flex items-center gap-2">
                   <input type="number" className="field-input flex-1" value={newHeight} onChange={e => setNewHeight(e.target.value)} placeholder="720" />
                   <span style={{ color: "var(--text-muted)" }}>→</span>
-                  <div className="flex-1 field-input font-bold" style={{ color: "#6366f1" }}>{newHeight ? calcNewWidth() : "—"} px</div>
+                  <div className="flex-1 field-input font-bold" style={{ color: "#6366f1" }}>{newHeight ? calcNewWidth() : "-"} px</div>
                 </div>
               </div>
             </div>

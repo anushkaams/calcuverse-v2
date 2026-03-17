@@ -57,7 +57,7 @@ export default function DensityCalc() {
       <div className="result-box">
         <div className="result-label capitalize">{solve}</div>
         <div className="result-value text-3xl">
-          {!isNaN(result) && isFinite(result) ? `${parseFloat(result.toPrecision(6))} ${unit}` : "—"}
+          {!isNaN(result) && isFinite(result) ? `${parseFloat(result.toPrecision(6))} ${unit}` : "-"}
         </div>
       </div>
 

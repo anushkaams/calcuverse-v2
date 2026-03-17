@@ -180,7 +180,7 @@ export default function LandingPage() {
                     </h1>
 
                     <p className="hero-fade-3 text-lg leading-relaxed mb-8 max-w-xl mx-auto" style={{color: "var(--text-secondary)"}}>
-                        From tip splitting to compound interest — all beautifully designed, instantly ready to use.
+                        From tip splitting to compound interest - all beautifully designed, instantly ready to use.
                     </p>
 
                     {/* Stats row */}
@@ -466,10 +466,10 @@ export default function LandingPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {[
                             {icon: "⚡", title: "Instant results", desc: "Every calculation updates live as you type. No submit buttons, no loading.", color: "#f59e0b"},
-                            {icon: "📱", title: "Works everywhere", desc: "Fully responsive — as comfortable on mobile as on a wide desktop monitor.", color: "#3b82f6"},
+                            {icon: "📱", title: "Works everywhere", desc: "Fully responsive -  as comfortable on mobile as on a wide desktop monitor.", color: "#3b82f6"},
                             {icon: "🔍", title: "Searchable", desc: "Fuzzy search across all calculators by name, category, or keyword.", color: "var(--accent)"},
                             {icon: "🎨", title: "Beautifully designed", desc: "Dark, modern UI with a consistent design language across every calculator.", color: "#ec4899"},
-                            {icon: "🏗️", title: "Easily extensible", desc: "Add a new calculator in minutes — one file and one registry entry.", color: "#10b981"},
+                            {icon: "🏗️", title: "Easily extensible", desc: "Add a new calculator in minutes - one file and one registry entry.", color: "#10b981"},
                             {icon: "🔒", title: "Privacy first", desc: "Everything runs in your browser. No data sent anywhere, ever.", color: "#8b5cf6"},
                         ].map(f => (
                             <div key={f.title} className="group p-6 rounded-2xl transition-all duration-300 hover:scale-[1.02]"
@@ -566,9 +566,6 @@ export default function LandingPage() {
                                 </div>
                                 <div className="text-sm" style={{color: "var(--text-muted)"}}>
                                     <span className="font-semibold" style={{color: "var(--accent)"}}>100%</span> Free
-                                </div>
-                                <div className="text-sm" style={{color: "var(--text-muted)"}}>
-                                    <span className="font-semibold" style={{color: "var(--accent)"}}>0</span> Ads
                                 </div>
                             </div>
                         </div>

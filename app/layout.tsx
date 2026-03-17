@@ -7,9 +7,9 @@ export const metadata: Metadata = {
     template: "%s | Calcosmos",
   },
   description:
-    "30+ free, beautifully designed calculators for everyday use — BMI, compound interest, tip, unit conversion, scientific and more. No sign-up, no backend.",
+    "30+ free, beautifully designed calculators for everyday use - BMI, compound interest, tip, unit conversion, scientific and more. No sign-up, no backend.",
   openGraph: {
-    title: "Calcosmos — Every Calculator You'll Ever Need",
+    title: "Calcosmos - Every Calculator You'll Ever Need",
     description:
       "30+ free calculators across 7 categories: everyday, finance, math, science, health, conversion and date & time.",
     type: "website",

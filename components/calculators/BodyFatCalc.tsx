@@ -48,7 +48,7 @@ export default function BodyFatCalc() {
     }
   };
 
-  const [cat, color] = bf > 0 ? getCategory(bf, gender) : ["—", "var(--text-muted)"];
+  const [cat, color] = bf > 0 ? getCategory(bf, gender) : ["-", "var(--text-muted)"];
 
   return (
     <div className="space-y-6 max-w-md mx-auto py-6 px-4">

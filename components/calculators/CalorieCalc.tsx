@@ -75,7 +75,7 @@ export default function CalorieCalc() {
 
       <div className="result-box">
         <div className="result-label">BMR (base metabolic rate)</div>
-        <div className="result-value">{isNaN(bmr) ? "—" : Math.round(bmr)} kcal/day</div>
+        <div className="result-value">{isNaN(bmr) ? "-" : Math.round(bmr)} kcal/day</div>
       </div>
 
       <div className="space-y-2">

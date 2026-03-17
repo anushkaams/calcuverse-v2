@@ -58,9 +58,9 @@ export default function WaterIntakeCalc() {
         <div className="field-label">Activity Level</div>
         <div className="space-y-1.5">
           {[
-            { id: "light", label: "💤 Light — mostly sedentary" },
-            { id: "moderate", label: "🚶 Moderate — some exercise" },
-            { id: "intense", label: "🏋️ Intense — heavy exercise" },
+            { id: "light", label: "💤 Light - mostly sedentary" },
+            { id: "moderate", label: "🚶 Moderate - some exercise" },
+            { id: "intense", label: "🏋️ Intense - heavy exercise" },
           ].map((a) => (
             <button
               key={a.id}

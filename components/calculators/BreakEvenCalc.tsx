@@ -3,7 +3,7 @@ import { useState } from "react";
 import CalculatorInfo from "@/components/CalculatorInfo";
 
 const FAQS = [
-  { question: "What is break-even analysis?", answer: "Break-even analysis determines the sales volume at which total revenue equals total costs — meaning no profit or loss. It helps businesses plan pricing and sales targets." },
+  { question: "What is break-even analysis?", answer: "Break-even analysis determines the sales volume at which total revenue equals total costs - meaning no profit or loss. It helps businesses plan pricing and sales targets." },
   { question: "What are fixed costs?", answer: "Fixed costs remain constant regardless of output, such as rent, salaries, and insurance." },
   { question: "What are variable costs?", answer: "Variable costs change with production volume, like raw materials, packaging, or shipping per unit." },
   { question: "How can I lower my break-even point?", answer: "Reduce fixed costs, lower variable cost per unit, or increase the selling price. Each approach shifts the point where you start making profit." },

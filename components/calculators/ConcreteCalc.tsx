@@ -6,7 +6,7 @@ const FAQS = [
   { question: "Why add 10% extra?", answer: "Adding 10–15% extra accounts for spillage, uneven surfaces, and the natural settling of materials. Running short mid-pour is a costly mistake." },
   { question: "How many bags of concrete do I need?", answer: "An 80lb (36kg) bag of concrete mix makes about 0.6 cubic feet (0.017 m³). A 60lb bag makes about 0.45 cubic feet." },
   { question: "What is the difference between concrete and cement?", answer: "Cement is an ingredient in concrete. Concrete is a mixture of cement, sand, gravel, and water. You use concrete for structures, not plain cement." },
-  { question: "What shapes can I calculate?", answer: "This calculator supports slabs (rectangular), cylinders (columns, posts), and circular slabs — the three most common concrete pour shapes." },
+  { question: "What shapes can I calculate?", answer: "This calculator supports slabs (rectangular), cylinders (columns, posts), and circular slabs - the three most common concrete pour shapes." },
 ];
 
 export default function ConcreteCalc() {

@@ -4,7 +4,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 
 const FAQS = [
   { question: "How are calories burned calculated?", answer: "Using MET (Metabolic Equivalent of Task) values: Calories = MET × weight (kg) × duration (hours). MET values are standardized estimates of activity intensity." },
-  { question: "Are these numbers exact?", answer: "No — individual variation is significant. Factors like fitness level, body composition, heat, and intensity affect actual calorie burn by ±20–30%." },
+  { question: "Are these numbers exact?", answer: "No - individual variation is significant. Factors like fitness level, body composition, heat, and intensity affect actual calorie burn by ±20–30%." },
   { question: "What is a MET value?", answer: "MET measures how many times more energy an activity uses compared to sitting at rest (1 MET). Running at 8 mph has a MET of ~11.5." },
   { question: "Does weight affect calories burned?", answer: "Yes. Heavier individuals burn more calories for the same activity because more energy is needed to move greater mass." },
 ];

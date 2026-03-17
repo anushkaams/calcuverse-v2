@@ -5,7 +5,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 const FAQS = [
   { question: "What is a voltage divider?", answer: "A voltage divider uses two resistors in series to produce an output voltage that is a fraction of the input. Vout = Vin × R2 / (R1 + R2)." },
   { question: "Where are voltage dividers used?", answer: "Voltage dividers are used to set reference voltages, interface sensors with microcontrollers, level-shift signals, and create analog inputs." },
-  { question: "Why can't I power a load directly with a voltage divider?", answer: "Voltage dividers are for low-current signal uses only. Adding a load changes the resistance ratio and drops the output voltage — use a voltage regulator instead." },
+  { question: "Why can't I power a load directly with a voltage divider?", answer: "Voltage dividers are for low-current signal uses only. Adding a load changes the resistance ratio and drops the output voltage - use a voltage regulator instead." },
   { question: "What happens if R2 is much larger than R1?", answer: "Vout approaches Vin. If R1 is much larger than R2, Vout approaches 0. The ratio R2/(R1+R2) determines the output fraction." },
 ];
 

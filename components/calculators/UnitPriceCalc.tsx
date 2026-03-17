@@ -64,7 +64,7 @@ export default function UnitPriceCalc() {
               <div key={i} className="result-box flex justify-between items-center" style={isBest ? { borderColor: "#10b98140", background: "#10b98112" } : {}}>
                 <span>{p.name} {isBest && "✓ Best Value"}</span>
                 <span className="font-bold" style={{ color: isBest ? "#10b981" : "var(--text-primary)" }}>
-                  {p.unitPrice < Infinity ? `$${p.unitPrice.toFixed(4)}/${p.unit}` : "—"}
+                  {p.unitPrice < Infinity ? `$${p.unitPrice.toFixed(4)}/${p.unit}` : "-"}
                 </span>
               </div>
             );

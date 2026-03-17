@@ -4,7 +4,7 @@ import CalculatorInfo from "@/components/CalculatorInfo";
 
 const FAQS = [
   { question: "What is one alcohol unit?", answer: "One UK unit = 10ml (8g) of pure alcohol. A standard pub measure of spirits (25ml at 40%) is 1 unit. A pint of 5% beer is ~2.8 units." },
-  { question: "How is BAC estimated?", answer: "BAC uses the Widmark formula, adjusted for gender, weight, and time elapsed. It's an estimate — many factors affect real BAC." },
+  { question: "How is BAC estimated?", answer: "BAC uses the Widmark formula, adjusted for gender, weight, and time elapsed. It's an estimate - many factors affect real BAC." },
   { question: "How long until I'm sober?", answer: "Your liver processes about 1 unit per hour on average. This varies by weight, metabolism, food intake, and individual factors." },
   { question: "What BAC is illegal to drive?", answer: "Limits vary: US/Canada: 0.08%, UK: 0.08% (Scotland 0.05%), Australia: 0.05%, most of Europe: 0.05%. Zero tolerance applies in some countries." },
 ];
