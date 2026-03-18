@@ -324,7 +324,7 @@ export default function LandingPage() {
                             ) : filteredCalcs.map(calc => {
                                 const color = CATEGORY_COLORS[calc.category];
                                 return (
-                                    <Link key={calc.id} href={`/calculator/${calc.id}`}
+                                    <Link key={calc.id} href={`/calculators/${calc.slug}`}
                                           className="calc-card group relative flex flex-col gap-2.5 p-4 rounded-2xl border"
                                           style={{background: "var(--surface-1)", borderColor: "var(--border)"}}
                                           onMouseEnter={e => {
@@ -406,7 +406,7 @@ export default function LandingPage() {
                                         {/* Calculator grid */}
                                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
                                             {calcs.map(calc => (
-                                                <Link key={calc.id} href={`/calculator/${calc.id}`}
+                                                <Link key={calc.id} href={`/calculators/${calc.slug}`}
                                                       className="calc-card group relative flex flex-col gap-2.5 p-4 rounded-2xl border"
                                                       style={{background: "var(--surface-1)", borderColor: "var(--border)"}}
                                                       onMouseEnter={e => {
