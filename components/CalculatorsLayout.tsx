@@ -1,5 +1,5 @@
 "use client";
-import { Suspense, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import {
   type CalcCategory,
   type CalculatorMeta,
@@ -117,8 +117,20 @@ function CalcCard({
   onClick: () => void;
 }) {
   const color = CATEGORY_COLORS[calc.category];
+  const ref = useRef<HTMLButtonElement>(null);
+  const prevActive = useRef(false);
+
+  // Only scroll into view when active transitions false → true (not on re-renders)
+  useEffect(() => {
+    if (active && !prevActive.current && ref.current) {
+      ref.current.scrollIntoView({ block: "nearest" });
+    }
+    prevActive.current = active;
+  }, [active]);
+
   return (
     <button
+      ref={ref}
       onClick={onClick}
       className={`w-full text-left p-3.5 rounded-xl border transition-all ${
         active
