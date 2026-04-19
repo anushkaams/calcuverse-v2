@@ -236,11 +236,16 @@ export default function CalculatorsLayout({
       {/* SIDEBAR */}
       <aside
         className={`fixed lg:relative z-30 lg:z-auto inset-y-0 left-0 flex flex-col w-72 border-r transition-transform duration-300 lg:translate-x-0 ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
-        style={{ background: "var(--surface-1)", borderColor: "var(--border)" }}
+        style={{
+          background: "var(--surface-1)",
+          borderColor: "var(--border)",
+          height: "100vh",
+        }}
       >
+        {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-3 px-5 py-4 border-b"
+          className="flex items-center gap-3 px-5 py-4 border-b flex-shrink-0"
           style={{ borderColor: "var(--border)" }}
         >
           <div
@@ -283,73 +288,81 @@ export default function CalculatorsLayout({
           </button>
         </Link>
 
+        {/* Search */}
         <div
-          className="px-4 py-3 border-b"
+          className="px-4 py-3 border-b flex-shrink-0"
           style={{ borderColor: "var(--border)" }}
         >
           <SearchBar value={search} onChange={setSearch} />
         </div>
 
-        {/* CATEGORY SECTION — takes half the remaining sidebar height */}
-        <div className="flex flex-col min-h-0" style={{ flex: "1 1 0" }}>
-          <div className="px-4 pt-3 pb-1 flex-shrink-0">
-            <div
-              className="text-xs font-semibold tracking-widest uppercase mb-2"
-              style={{ color: "var(--text-muted)" }}
-            >
-              Category
-            </div>
-          </div>
-          <div className="overflow-y-auto px-4 pb-2 flex-1">
-            <CategoryFilter
-              active={category}
-              onChange={handleCategoryChange}
-              counts={counts}
-            />
-          </div>
-        </div>
-
+        {/* Scrollable body — strict 50/50 split */}
         <div
-          className="mx-4 border-t flex-shrink-0"
-          style={{ borderColor: "var(--border)" }}
-        />
-
-        {/* CALC LIST SECTION — takes the other half */}
-        <div className="flex flex-col min-h-0" style={{ flex: "1 1 0" }}>
-          <div className="px-4 pt-2 pb-1 flex-shrink-0">
-            <div
-              className="text-xs font-semibold tracking-widest uppercase"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {category === "all"
-                ? "All Calculators"
-                : CATEGORY_LABELS[category as CalcCategory]}{" "}
-              ({filtered.length})
-            </div>
-          </div>
+          className="flex-1 flex flex-col overflow-hidden"
+          style={{ minHeight: 0 }}
+        >
+          {/* TOP HALF — Category list */}
           <div
-            ref={calcListRef}
-            className="overflow-y-auto flex-1 px-4 pb-6 space-y-1.5"
+            className="flex flex-col overflow-hidden"
+            style={{ height: "50%", borderBottom: "1px solid var(--border)" }}
           >
-            {filtered.length === 0 ? (
-              <div
-                className="text-center py-10 text-sm"
+            <div className="px-4 pt-3 pb-1 flex-shrink-0">
+              <span
+                className="text-xs font-semibold tracking-widest uppercase"
                 style={{ color: "var(--text-muted)" }}
               >
-                No calculators match
-                <br />
-                <span className="text-xs">"{search}"</span>
-              </div>
-            ) : (
-              filtered.map((calc) => (
-                <CalcCard
-                  key={calc.id}
-                  calc={calc}
-                  active={calc.id === activeId}
-                  onClick={() => handleCalcSelect(calc)}
-                />
-              ))
-            )}
+                Category
+              </span>
+            </div>
+            <div className="overflow-y-auto flex-1 px-4 pb-3">
+              <CategoryFilter
+                active={category}
+                onChange={handleCategoryChange}
+                counts={counts}
+              />
+            </div>
+          </div>
+
+          {/* BOTTOM HALF — Calculator list */}
+          <div
+            className="flex flex-col overflow-hidden"
+            style={{ height: "50%" }}
+          >
+            <div className="px-4 pt-2 pb-1 flex-shrink-0">
+              <span
+                className="text-xs font-semibold tracking-widest uppercase"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {category === "all"
+                  ? "All Calculators"
+                  : CATEGORY_LABELS[category as CalcCategory]}{" "}
+                ({filtered.length})
+              </span>
+            </div>
+            <div
+              ref={calcListRef}
+              className="overflow-y-auto flex-1 px-4 pb-6 space-y-1.5"
+            >
+              {filtered.length === 0 ? (
+                <div
+                  className="text-center py-10 text-sm"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  No calculators match
+                  <br />
+                  <span className="text-xs">"{search}"</span>
+                </div>
+              ) : (
+                filtered.map((calc) => (
+                  <CalcCard
+                    key={calc.id}
+                    calc={calc}
+                    active={calc.id === activeId}
+                    onClick={() => handleCalcSelect(calc)}
+                  />
+                ))
+              )}
+            </div>
           </div>
         </div>
       </aside>
