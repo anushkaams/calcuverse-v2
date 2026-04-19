@@ -15,8 +15,8 @@ export default function DiscountCalc() {
       <div>
         <div className="field-label">Original Price</div>
         <div className="relative">
-          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm" style={{ color: "var(--text-muted)" }}>$</span>
-          <input type="number" className="field-input pl-7" value={original} onChange={e => setOriginal(e.target.value)} placeholder="100.00" />
+          <span className="field-prefix-symbol">$</span>
+          <input type="number" className="field-input field-input--prefix" value={original} onChange={e => setOriginal(e.target.value)} placeholder="100.00" />
         </div>
       </div>
       <div>

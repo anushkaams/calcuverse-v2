@@ -24,8 +24,8 @@ export default function LoanCalc() {
         <div key={label}>
           <div className="field-label">{label}</div>
           <div className="relative">
-            {prefix && <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm" style={{ color: "var(--text-muted)" }}>{prefix}</span>}
-            <input type="number" className={`field-input ${prefix ? "pl-7" : ""} ${suffix ? "pr-10" : ""}`} value={value} onChange={e => set(e.target.value)} />
+            {prefix && <span className="field-prefix-symbol">{prefix}</span>}
+            <input type="number" className={`field-input ${prefix ? "field-input--prefix" : ""} ${suffix ? "pr-10" : ""}`} value={value} onChange={e => set(e.target.value)} />
             {suffix && <span className="absolute right-3 top-1/2 -translate-y-1/2 text-sm" style={{ color: "var(--text-muted)" }}>{suffix}</span>}
           </div>
         </div>

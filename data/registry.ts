@@ -8,7 +8,8 @@ export type CalcCategory =
   | "science"
   | "date-time"
   | "construction"
-  | "education";
+  | "education"
+  | "australia";
 
 export interface CalculatorMeta {
   id: string;
@@ -30,6 +31,7 @@ export const CATEGORY_LABELS: Record<CalcCategory, string> = {
   "date-time": "Date & Time",
   construction: "Construction",
   education: "Education",
+  australia: "Australia Specific",
 };
 
 export const CATEGORY_COLORS: Record<CalcCategory, string> = {
@@ -41,6 +43,7 @@ export const CATEGORY_COLORS: Record<CalcCategory, string> = {
   "date-time": "#a855f7",
   construction: "#f97316",
   education: "#14b8a6",
+  australia: "#00843D",
 };
 
 export const CALCULATORS: CalculatorMeta[] = [
@@ -131,7 +134,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calories burned during exercise",
     category: "health",
     icon: "🔥",
-    component: lazy(() => import("../components/calculators/CaloriesBurnedCalc")),
+    component: lazy(
+      () => import("../components/calculators/CaloriesBurnedCalc"),
+    ),
     tags: [],
   },
   {
@@ -141,7 +146,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Estimate your carbon emissions",
     category: "science",
     icon: "🌍",
-    component: lazy(() => import("../components/calculators/CarbonFootprintCalc")),
+    component: lazy(
+      () => import("../components/calculators/CarbonFootprintCalc"),
+    ),
     tags: [],
   },
   {
@@ -151,7 +158,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calculate circle circumference",
     category: "math",
     icon: "⭕",
-    component: lazy(() => import("../components/calculators/CircumferenceCalc")),
+    component: lazy(
+      () => import("../components/calculators/CircumferenceCalc"),
+    ),
     tags: [],
   },
   {
@@ -161,7 +170,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calculate compound interest growth",
     category: "finance",
     icon: "📈",
-    component: lazy(() => import("../components/calculators/CompoundInterestCalc")),
+    component: lazy(
+      () => import("../components/calculators/CompoundInterestCalc"),
+    ),
     tags: [],
   },
   {
@@ -251,7 +262,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Estimate electricity costs",
     category: "everyday",
     icon: "⚡",
-    component: lazy(() => import("../components/calculators/ElectricityCostCalc")),
+    component: lazy(
+      () => import("../components/calculators/ElectricityCostCalc"),
+    ),
     tags: [],
   },
   {
@@ -281,7 +294,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calculate your hourly freelance rate",
     category: "finance",
     icon: "💼",
-    component: lazy(() => import("../components/calculators/FreelanceRateCalc")),
+    component: lazy(
+      () => import("../components/calculators/FreelanceRateCalc"),
+    ),
     tags: [],
   },
   {
@@ -381,7 +396,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calculate kinetic energy of objects",
     category: "science",
     icon: "⚙️",
-    component: lazy(() => import("../components/calculators/KineticEnergyCalc")),
+    component: lazy(
+      () => import("../components/calculators/KineticEnergyCalc"),
+    ),
     tags: [],
   },
   {
@@ -451,7 +468,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "How much house can you afford",
     category: "finance",
     icon: "🏡",
-    component: lazy(() => import("../components/calculators/MortgageAffordCalc")),
+    component: lazy(
+      () => import("../components/calculators/MortgageAffordCalc"),
+    ),
     tags: [],
   },
   {
@@ -521,7 +540,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Check how strong your password is",
     category: "everyday",
     icon: "🔐",
-    component: lazy(() => import("../components/calculators/PasswordStrengthCalc")),
+    component: lazy(
+      () => import("../components/calculators/PasswordStrengthCalc"),
+    ),
     tags: [],
   },
   {
@@ -701,7 +722,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Convert to and from scientific notation",
     category: "math",
     icon: "🔬",
-    component: lazy(() => import("../components/calculators/ScientificNotationCalc")),
+    component: lazy(
+      () => import("../components/calculators/ScientificNotationCalc"),
+    ),
     tags: [],
   },
   {
@@ -851,7 +874,9 @@ export const CALCULATORS: CalculatorMeta[] = [
     description: "Calculate voltage divider circuits",
     category: "science",
     icon: "⚡",
-    component: lazy(() => import("../components/calculators/VoltageDividerCalc")),
+    component: lazy(
+      () => import("../components/calculators/VoltageDividerCalc"),
+    ),
     tags: [],
   },
   {
@@ -883,5 +908,97 @@ export const CALCULATORS: CalculatorMeta[] = [
     icon: "🌬️",
     component: lazy(() => import("../components/calculators/WindChillCalc")),
     tags: [],
-  }
+  },
+  {
+    id: "au-income-tax",
+    slug: "au-income-tax-calculator",
+    name: "AU Income Tax",
+    description: "2025-26 take-home pay & tax breakdown",
+    category: "australia",
+    icon: "💰",
+    component: lazy(() => import("../components/calculators/AUIncomeTaxCalc")),
+    tags: ["tax", "ato", "medicare", "lito", "australia"],
+  },
+  {
+    id: "au-stamp-duty",
+    slug: "au-stamp-duty-calculator",
+    name: "Stamp Duty Calculator",
+    description: "All states — NSW, VIC, QLD, WA, SA, TAS, ACT, NT",
+    category: "australia",
+    icon: "🏠",
+    component: lazy(() => import("../components/calculators/AUStampDutyCalc")),
+    tags: [
+      "stamp duty",
+      "transfer duty",
+      "property",
+      "first home buyer",
+      "australia",
+    ],
+  },
+  {
+    id: "au-super",
+    slug: "au-superannuation-calculator",
+    name: "Superannuation",
+    description: "Retirement projection with 12% SG rate",
+    category: "australia",
+    icon: "🦘",
+    component: lazy(() => import("../components/calculators/AUSuperCalc")),
+    tags: ["super", "superannuation", "retirement", "sg rate", "australia"],
+  },
+  {
+    id: "au-hecs",
+    slug: "au-hecs-help-calculator",
+    name: "HECS-HELP Repayment",
+    description: "2025-26 marginal repayment rates + payoff timeline",
+    category: "australia",
+    icon: "📚",
+    component: lazy(() => import("../components/calculators/AUHECSCalc")),
+    tags: ["hecs", "help debt", "student loan", "university", "australia"],
+  },
+  {
+    id: "au-mortgage",
+    slug: "au-mortgage-calculator",
+    name: "AU Home Loan",
+    description: "Repayments with offset account & P&I vs IO",
+    category: "australia",
+    icon: "🏡",
+    component: lazy(() => import("../components/calculators/AUMortgageCalc")),
+    tags: ["mortgage", "home loan", "offset", "repayment", "australia"],
+  },
+  {
+    id: "au-gst",
+    slug: "au-gst-calculator",
+    name: "GST Calculator",
+    description: "Add or remove 10% Australian GST instantly",
+    category: "australia",
+    icon: "🧾",
+    component: lazy(() => import("../components/calculators/AUGSTCalc")),
+    tags: ["gst", "tax", "invoice", "business", "australia"],
+  },
+  {
+    id: "au-redundancy",
+    slug: "au-redundancy-calculator",
+    name: "Redundancy Pay",
+    description: "Fair Work notice period & severance entitlements",
+    category: "australia",
+    icon: "📋",
+    component: lazy(() => import("../components/calculators/AURedundancyCalc")),
+    tags: [
+      "redundancy",
+      "fair work",
+      "notice period",
+      "severance",
+      "australia",
+    ],
+  },
+  {
+    id: "au-atar",
+    slug: "au-atar-calculator",
+    name: "ATAR Estimator",
+    description: "HSC, VCE, QCE, WACE & SACE with subject scaling",
+    category: "australia",
+    icon: "🎓",
+    component: lazy(() => import("../components/calculators/AUATARCalc")),
+    tags: ["atar", "hsc", "vce", "qce", "year 12", "australia"],
+  },
 ];

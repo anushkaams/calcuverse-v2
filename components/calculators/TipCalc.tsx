@@ -20,8 +20,8 @@ export default function TipCalc() {
       <div>
         <div className="field-label">Bill Amount</div>
         <div className="relative">
-          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm" style={{ color: "var(--text-muted)" }}>$</span>
-          <input type="number" className="field-input pl-7" value={bill} onChange={e => setBill(e.target.value)} placeholder="0.00" min="0" step="0.01" />
+          <span className="field-prefix-symbol">$</span>
+          <input type="number" className="field-input field-input--prefix" value={bill} onChange={e => setBill(e.target.value)} placeholder="0.00" min="0" step="0.01" />
         </div>
       </div>
 

@@ -41,11 +41,19 @@
   --nav-scrolled-bg: rgba(255, 255, 255, 0.85);
 }
 
-.logo-dark  { display: block; }
-.logo-light { display: none; }
+.logo-dark {
+  display: block;
+}
+.logo-light {
+  display: none;
+}
 
-[data-theme="light"] .logo-dark  { display: none; }
-[data-theme="light"] .logo-light { display: block; }
+[data-theme="light"] .logo-dark {
+  display: none;
+}
+[data-theme="light"] .logo-light {
+  display: block;
+}
 
 /* ── Global Styles ── */
 * {
@@ -215,6 +223,22 @@ body {
 }
 .field-input:focus {
   border-color: var(--accent);
+}
+
+/* Dollar/symbol prefix inputs — use class="field-input field-input--prefix" */
+.field-input--prefix {
+  padding-left: 2.25rem; /* 36px — clears the $ symbol at dm-mono 1rem */
+}
+.field-prefix-symbol {
+  position: absolute;
+  left: 0.75rem; /* 12px from edge */
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-dm-mono);
+  font-size: 1rem; /* match input font size so alignment is exact */
+  color: var(--text-muted);
+  pointer-events: none;
+  user-select: none;
 }
 .field-input::placeholder {
   color: var(--text-muted);

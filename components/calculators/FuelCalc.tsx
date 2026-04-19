@@ -91,8 +91,8 @@ export default function FuelCalc() {
             <div>
                 <div className="field-label">Fuel Price ({priceLabel})</div>
                 <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm" style={{ color: "var(--text-muted)" }}>$</span>
-                    <input type="number" className="field-input pl-7" value={fuelPrice} onChange={e => setFuelPrice(e.target.value)} step="0.01" />
+                    <span className="field-prefix-symbol">$</span>
+                    <input type="number" className="field-input field-input--prefix" value={fuelPrice} onChange={e => setFuelPrice(e.target.value)} step="0.01" />
                 </div>
             </div>
 
