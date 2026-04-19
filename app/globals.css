@@ -225,7 +225,15 @@ body {
   border-color: var(--accent);
 }
 
-/* Dollar/symbol prefix inputs — use class="field-input field-input--prefix" */
+/* Hide scrollbar for horizontal category pills */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .field-input--prefix {
   padding-left: 2.25rem; /* 36px — clears the $ symbol at dm-mono 1rem */
 }
